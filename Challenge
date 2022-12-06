@@ -1,0 +1,12 @@
+function getRandomNumberOfTacos() {
+ return ['Empty Tray'] // replace this empty tray array
+
+}
+
+function putTacosOnTray() {
+    return getRandomNumberOfTacos().map(function (taco) {
+        return `<div class="taco">${taco}</div>`
+    }).join('')
+}
+
+document.getElementById('tray').innerHTML = putTacosOnTray()
